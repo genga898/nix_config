@@ -20,7 +20,12 @@
 
     # fonts
     jetbrains-mono
-    nerdfonts
+    nerd-fonts.iosevka
+    nerd-fonts.fira-mono
+    nerd-fonts.noto
+    nerd-fonts.fira-code
+    nerd-fonts.zed-mono
+    nerd-fonts.jetbrains-mono
 
     # themes
     whitesur-icon-theme

@@ -19,7 +19,7 @@
       zellij
 
       #editors
-      #zed-editor
+      zed-editor
       vscode
 
       # cli tools
@@ -34,6 +34,9 @@
       rye
       devbox
       gh
+      yq
+      ngrok
+      zrok
 
       # gnome theme dependencies
       gtk-engine-murrine
