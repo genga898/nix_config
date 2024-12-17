@@ -15,6 +15,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    #nix-index
+    nix-index-database.url = "github:nix-community/nix-index-database";
+    nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
+
     # hyprcursor theme
     rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
   };
@@ -24,6 +28,7 @@
       self,
       nixpkgs,
       home-manager,
+      nix-index-database,
       ...
     }@inputs:
     {
@@ -39,6 +44,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.genga = import ./hosts/default/home.nix;
           }
+          nix-index-database.nixosModules.nix-index
         ];
       };
     };
