@@ -71,7 +71,7 @@
       jetbrains-toolbox
       gnome-boxes
       keypunch
-
+      (callPackage "/home/genga/nix_config/modules/nixos/yuckls.nix" { })
     ];
   };
 }
