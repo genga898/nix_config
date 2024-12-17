@@ -7,6 +7,7 @@
       set -gx PATH $PATH ~/.local/bin/
       set -gx PATH $PATH ~/.local/opt/
       set -gx PATH $PATH ~/.waveterm/bin/
+      set -gx PATH $PATH ~/.rye/tools/posting/bin/
 
     '';
     shellAbbrs = {
@@ -16,6 +17,7 @@
     shellAliases = {
       ls = "tree -L1 -C";
       nixpkgs = "cd ~/Documents/nixpkgs";
+      c = "clear";
 
       # abbreviate nix commands
       n = "nix";
@@ -25,8 +27,8 @@
       ns = "nix-shell";
       nrp = "nix repl";
       nfu = "nix flake update";
-      nswitch = "nixos-rebuild switch --flake /etc/nixos/#genga";
-      ntest = "nixos-rebuild test --flake /etc/nixos/#genga";
+      nswitch = "nixos-rebuild switch --flake /home/genga/nix_config/#genga";
+      ntest = "nixos-rebuild test --flake /home/genga/nix_config/#genga";
 
       # launch terminal tools
       nv = "nvim";
@@ -49,6 +51,7 @@
       gs = "git stash";
       gsp = "git stash pop";
       gch = "git checkout";
+      gpl = "git pull";
 
       # devbox
       dev_in = "devbox init";
