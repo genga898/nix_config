@@ -15,7 +15,6 @@
     ./hardware-configuration.nix
     ../../modules/nixos/boot.nix
     ../../modules/nixos/fish.nix
-    ../../modules/nixos/bash.nix
     ../../modules/nixos/user.nix
     ../../modules/nixos/system.nix
     ../../modules/nixos/kanata.nix
@@ -43,6 +42,9 @@
     "nix-command"
     "flakes"
   ];
+
+  #Make fish the default shell
+  users.defaultUserShell = pkgs.fish;
 
   # Enable hyprland
   programs.hyprland.enable = true;
