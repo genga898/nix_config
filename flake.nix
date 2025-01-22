@@ -4,6 +4,10 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    ghostty = {
+      url = "github:ghostty-org/ghostty";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -14,6 +18,10 @@
       url = "github:hyprwm/contrib";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    hyprland-qtutils.url = "github:hyprwm/hyprland-qtutils";
+
+    nixd.url = "github:nix-community/nixd";
 
     #nix-index
     nix-index-database.url = "github:nix-community/nix-index-database";
@@ -27,7 +35,10 @@
     {
       self,
       nixpkgs,
+      ghostty,
       home-manager,
+      hyprland-qtutils,
+      nixd,
       nix-index-database,
       ...
     }@inputs:
@@ -38,6 +49,13 @@
         };
         modules = [
           ./hosts/default/configuration.nix
+          {
+            environment.systemPackages = [
+              ghostty.packages.x86_64-linux.default
+              hyprland-qtutils.packages.x86_64-linux.default
+              nixd.packages.x86_64-linux.default
+            ];
+          }
           home-manager.nixosModules.default
           {
             home-manager.useGlobalPkgs = true;

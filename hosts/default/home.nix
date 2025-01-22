@@ -68,7 +68,7 @@
     kitty = {
       enable = true;
       font = {
-        name = "Jetbrains Mono";
+        name = "JetBrains Mono";
         size = 10;
       };
       themeFile = "kanagawa";

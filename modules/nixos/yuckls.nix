@@ -14,8 +14,8 @@ buildDotnetModule {
   src = fetchFromGitHub {
     owner = "Eugenenoble2005";
     repo = "YuckLS";
-    rev = "dffe86db9c0616c516ee9620f8bf8d57759ffb11";
-    hash = "sha256-SA39EfwCZyMMxK3zDH25lbOc+Ih3gMDufFyhyQ/es0s=";
+    rev = "ab4c0315cd6c77ef0ed3c620bde0ece48e4a5949";
+    hash = "sha256-HhxFVX9BHNydguGFZMd5FNZB06KxF34A9CqTzwJijes=";
   };
 
   projectFile = "YuckLS/YuckLS.csproj";

@@ -13,10 +13,8 @@
     ];
     packages = with pkgs; [
       # terminals
-      waveterm
       alacritty
       starship
-      zellij
 
       #editors
       zed-editor
@@ -26,7 +24,6 @@
       lazydocker
       gomanagedocker
       dblab
-      lazygit
       atac
       tree
       jq
@@ -35,19 +32,16 @@
       devbox
       gh
       yq
+      ripgrep
       ngrok
       zrok
+      zoxide
 
       # gnome theme dependencies
       gtk-engine-murrine
       gnome-themes-extra
 
-      #language servers
-      nil
-      nixd
-
       # hyprland dependencies
-      swww
       sassc
       fd
       dart-sass
@@ -65,12 +59,11 @@
       brightnessctl
       libnotify
       wf-recorder
-      hyprlauncher
 
       #others
       jetbrains-toolbox
-      gnome-boxes
       keypunch
+      obsidian
       (callPackage "/home/genga/nix_config/modules/nixos/yuckls.nix" { })
     ];
   };

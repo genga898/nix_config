@@ -10,7 +10,7 @@
          k
          c
          n
-         caps
+         lsft
         )
 
         (defvar 
@@ -24,9 +24,9 @@
           a-mod (tap-hold $tt $ht a lmet)
           d-mod (tap-hold $tt $ht d lsft)
           k-mod (tap-hold $tt $ht k rsft)
-          c-mod (tap-hold $tt $ht (tap-dance $tt(c C-c)) ctl)
+          c-mod (tap-hold $tt $ht c ctl)
           n-mod (tap-hold $tt $ht n alt)
-          caps-mod (tap-dance $tt (caps esc))
+          lsft-mod (tap-dance $tt(esc C-c))
         )
 
         (deflayer base
@@ -35,7 +35,7 @@
           @k-mod
           @c-mod
           @n-mod
-          @caps-mod
+          @lsft-mod
         )
       '';
     };

@@ -16,7 +16,6 @@
 
     shellAliases = {
       ls = "tree -L1 -C";
-      nixpkgs = "cd ~/Documents/nixpkgs";
       c = "clear";
 
       # abbreviate nix commands
@@ -24,7 +23,7 @@
       nd = "nix develop";
       nb = "nix-build";
       nr = "nix run";
-      ns = "nix-shell";
+      ns = "nix-shell --run fish";
       nrp = "nix repl";
       nfu = "nix flake update";
       nswitch = "nixos-rebuild switch --flake /home/genga/nix_config/#genga";
@@ -33,9 +32,7 @@
       # launch terminal tools
       nv = "nvim";
       db = "dblab";
-      go_md = "gomanagedocker";
-      lazyt = "lazygit";
-      zel = "zellij";
+      gmd = "gomanagedocker";
 
       # docker
       docker_cu = "docker compose up";
@@ -60,6 +57,11 @@
       dev_u = "devbox update";
       dev_rm = "devbox rm";
       devadd = "devbox add";
+
+      #zoxide
+      z = "__zoxide_z";
+      zi = "__zoxide_zi";
+      cd = "__zoxide_cd";
     };
   };
 }
