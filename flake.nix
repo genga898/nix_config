@@ -19,13 +19,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hyprland-qtutils.url = "github:hyprwm/hyprland-qtutils";
+    hyprland-qtutils.url = "github:hyprwm/hyprland-qt-support";
 
     nixd.url = "github:nix-community/nixd";
 
     #nix-index
     nix-index-database.url = "github:nix-community/nix-index-database";
-    nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
 
     # hyprcursor theme
     rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";

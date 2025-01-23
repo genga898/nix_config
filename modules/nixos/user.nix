@@ -36,6 +36,7 @@
       ngrok
       zrok
       zoxide
+      socat
 
       # gnome theme dependencies
       gtk-engine-murrine
@@ -61,7 +62,6 @@
       wf-recorder
 
       #others
-      jetbrains-toolbox
       keypunch
       obsidian
       (callPackage "/home/genga/nix_config/modules/nixos/yuckls.nix" { })

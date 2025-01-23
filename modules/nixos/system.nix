@@ -48,5 +48,6 @@
     # neovim and its dependencies
     neovim
 
+    jetbrains-toolbox
   ];
 }
