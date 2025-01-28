@@ -47,6 +47,8 @@
 
     # neovim and its dependencies
     neovim
+    gcc
+    unzip
 
     jetbrains-toolbox
   ];

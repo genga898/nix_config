@@ -20,6 +20,13 @@
       zed-editor
       vscode
 
+      # Lsp
+      eslint
+      biome
+      tailwindcss-language-server
+      typescript-language-server
+      typescript
+
       # cli tools
       lazydocker
       gomanagedocker
@@ -37,6 +44,7 @@
       zrok
       zoxide
       socat
+      tailwindcss
 
       # gnome theme dependencies
       gtk-engine-murrine
@@ -60,6 +68,7 @@
       brightnessctl
       libnotify
       wf-recorder
+      walker
 
       #others
       keypunch
