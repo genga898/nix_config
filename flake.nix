@@ -36,9 +36,11 @@
       nixpkgs,
       ghostty,
       home-manager,
+      hyprland-contrib,
       hyprland-qtutils,
       nixd,
       nix-index-database,
+      rose-pine-hyprcursor,
       ...
     }@inputs:
     {
@@ -53,6 +55,8 @@
               ghostty.packages.x86_64-linux.default
               hyprland-qtutils.packages.x86_64-linux.default
               nixd.packages.x86_64-linux.default
+              hyprland-contrib.packages.x86_64-linux.grimblast
+              rose-pine-hyprcursor.packages.x86_64-linux.default
             ];
           }
           home-manager.nixosModules.default

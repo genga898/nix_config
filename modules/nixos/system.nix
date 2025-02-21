@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   # List packages installed in system profile. To search, run:
@@ -6,8 +6,6 @@
   environment.systemPackages = with pkgs; [
 
     #hyprland dependencies
-    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
-    inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
     networkmanagerapplet
 
     # nix formatter
@@ -28,7 +26,7 @@
     nerd-fonts.jetbrains-mono
 
     # themes
-    whitesur-icon-theme
+    kanagawa-icon-theme
     whitesur-gtk-theme
     whitesur-cursors
     kanagawa-gtk-theme
@@ -39,9 +37,6 @@
     gnome-software
     gnome-network-displays
     font-manager
-
-    #browsers
-    vivaldi
 
     flatpak
 

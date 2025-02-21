@@ -21,11 +21,13 @@
       vscode
 
       # Lsp
-      eslint
+      # eslint
       biome
       tailwindcss-language-server
       typescript-language-server
       typescript
+      roslyn-ls
+      rzls
 
       # cli tools
       lazydocker
@@ -57,7 +59,6 @@
       wl-clipboard
       hyprpicker
       swayosd
-      swaynotificationcenter
       eww
       blueman
       sox
@@ -69,6 +70,9 @@
       libnotify
       wf-recorder
       walker
+
+      #browsers
+      vivaldi
 
       #others
       keypunch
